@@ -37,3 +37,8 @@ a:hover {
   color: red;
   background-color: #ccffcc;
 }
+.copyright {
+  color: #cc0099;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+}
