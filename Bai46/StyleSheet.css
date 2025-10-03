@@ -1,0 +1,75 @@
+html,
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+}
+
+header {
+  margin: 0 auto;
+  padding: 0;
+  width: 95%;
+  font-size: 1em;
+  margin-bottom: 1%;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0;
+  width: 95%;
+  font-size: 1em;
+}
+
+/* Header */
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+.header {
+  text-align: center;
+  background-color: white;
+  border: solid 2px;
+}
+
+/* SideContent */
+.list {
+  float: right;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(208, 208, 208);
+  border: 2px solid rgb(102, 102, 102);
+}
+
+.list--item > a {
+  text-decoration: none;
+  overflow-x: hidden;
+}
+/* Main content */
+h2,
+h3,
+h4 {
+  color: blueviolet;
+}
+
+.content {
+  width: 80%;
+}
+
+#singer {
+  float: right;
+  width: 40%;
+  height: auto;
+}
+
+#scene {
+  float: left;
+  width: 40%;
+  height: auto;
+}

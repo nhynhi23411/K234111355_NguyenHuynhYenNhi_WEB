@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+}
+
+.menu {
+  width: 40%;
+  background-color: darkolivegreen;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+}
