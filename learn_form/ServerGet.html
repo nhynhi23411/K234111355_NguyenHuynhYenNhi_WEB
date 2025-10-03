@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Using the GET Method - NhyNhi</title>
+    <script>
+      function getUrlVars() {
+        var vars = {};
+        window.location.href.replace(
+          /[?&]+([^=&]+)=([^&]*)/gi,
+          function (m, key, value) {
+            vars[key] = value;
+          }
+        );
+        return vars;
+      }
+
+      var ten = unescape(getUrlVars()["txtten"]);
+      var email = unescape(getUrlVars()["txtemail"]);
+    </script>
+  </head>
+  <body>
+    <form>
+      <table border="1">
+        <tr>
+          <td>User:</td>
+          <td id="iduser"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td id="idemail"></td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      document.getElementById("iduser").innerHTML = ten;
+      document.getElementById("idemail").innerHTML = email;
+    </script>
+  </body>
+</html>
