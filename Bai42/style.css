@@ -1,0 +1,57 @@
+body {
+  color: green;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  margin: 0 0.5em;
+}
+/* Article */
+.article {
+  float: right;
+  width: 40vw;
+  background-color: bisque;
+}
+
+h3,
+h1 {
+  color: brown;
+}
+
+#logo {
+  float: right;
+}
+/* Main */
+ul {
+  list-style: url(images/Apple.jpg);
+}
+
+li > b {
+  color: red;
+}
+
+li {
+  color: green;
+}
+
+.special {
+  color: brown;
+  font-weight: bold;
+}
+/* Blockquote */
+blockquote {
+  background-color: silver;
+}
+
+/* Footer */
+address {
+  font-size: 0.5em;
+  font-style: italic;
+  text-align: left;
+}
