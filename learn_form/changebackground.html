@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Change Background - NhyNhi</title>
+    <script>
+      function change(value) {
+        const mydiv = document.getElementById("mydiv");
+        mydiv.style.backgroundColor = value;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Change background Color</h3>
+
+    <select id="mybackground" name="mybackground" onchange="change(this.value)">
+      <option value="blue">Xanh da trời</option>
+      <option value="red">Đỏ</option>
+      <option value="yellow">Vàng</option>
+      <option value="pink">Hồng</option>
+    </select>
+
+    <br /><br />
+
+    <div
+      id="mydiv"
+      style="width: 100%; height: 100px; background-color: purple"
+    ></div>
+
+    <footer>
+      <p>&copy; 2025 Bản quyền thuộc về NhyNhi.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(205, 255, 255);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+form {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border: 1px solid #000;
+  background-color: rgb(220, 255, 255);
+}
+
+header {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: red;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+/* Main content */
+ol {
+  list-style-position: inside;
+}
+
+li {
+  list-style-type: none;
+  counter-increment: step-counter;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+li::before {
+  content: counter(step-counter) ") ";
+}
+
+td {
+  padding: 5px 15px;
+  vertical-align: middle;
+}
+
+td > label {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"] {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 0.9em;
+}
+
+#searchText {
+  width: 70%;
+  margin-top: 5px;
+}
+
+/* Date inputs */
+#beginDate,
+#finishDate {
+  width: 160px;
+  font-size: 0.9em;
+}
+
+/* Buttons */
+button {
+  width: 80px;
+  height: 60px;
+  margin: 10px 20px 0 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+#search {
+  background-image: url(images/Search.gif);
+}
+
+#help {
+  background-image: url(images/Help.gif);
+}
+
+#cancel {
+  background-image: url(images/Cancel.gif);
+}
+
+/* Optional hover effect */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Align last section */
+li:last-child {
+  text-align: center;
+  margin-top: 25px;
+}
