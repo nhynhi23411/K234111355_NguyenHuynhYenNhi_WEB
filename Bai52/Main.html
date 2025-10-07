@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact the Editorial Office - NhyNhi</title>
+    <style>
+      input,
+      select,
+      textarea {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="action.html" method="get">
+      <h2>Contact the editorial office</h2>
+      <table border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td colspan="2">
+            <label for="fullname">Full name:</label><br />
+            <input type="text" name="fullname" id="fullname" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="email">Email:</label><br />
+            <input type="email" name="email" id="email" required />
+          </td>
+          <td>
+            <label for="sendto">Send to:</label><br />
+            <select name="sendto" id="sendto">
+              <option value="Editorial board">Editorial board</option>
+              <option value="News Department">News Department</option>
+              <option value="Board of Perspectives">
+                Board of Perspectives
+              </option>
+              <option value="World Board">World Board</option>
+              <option value="Business Department">Business Department</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <label for="title">Title:</label><br />
+            <input type="text" name="title" id="title" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <label for="content">Content:</label><br />
+            <textarea name="content" id="content" rows="6"></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <input
+        type="submit"
+        value="Send"
+        style="background-color: purple; color: white; width: 80px"
+      />
+    </form>
+  </body>
+</html>

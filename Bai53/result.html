@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Summary</title>
+  </head>
+  <body>
+    <h2>Product Order Summary</h2>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      document.write(
+        "<p><strong>Mouse Qty:</strong> " + params.get("qty1") + "</p>"
+      );
+      document.write(
+        "<p><strong>Keyboard Qty:</strong> " + params.get("qty2") + "</p>"
+      );
+      document.write(
+        "<p><strong>USB Qty:</strong> " + params.get("qty3") + "</p>"
+      );
+      document.write(
+        "<p><strong>Item Total 1:</strong> " + params.get("item1") + "</p>"
+      );
+      document.write(
+        "<p><strong>Item Total 2:</strong> " + params.get("item2") + "</p>"
+      );
+      document.write(
+        "<p><strong>Item Total 3:</strong> " + params.get("item3") + "</p>"
+      );
+      document.write("<hr>");
+      document.write(
+        "<p><strong>Total Sum:</strong> " + params.get("total") + "</p>"
+      );
+    </script>
+  </body>
+</html>

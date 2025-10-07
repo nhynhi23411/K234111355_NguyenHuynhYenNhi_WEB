@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Newborn Registration - St. Mary's of Northland Pines - NhyNhi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 128, 128);
+        padding: 10px;
+        font-size: 1.5vw;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 1% 0;
+      }
+
+      img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      div {
+        text-align: center;
+      }
+
+      ol {
+        list-style-position: inside;
+        font-size: 1.5vw;
+        margin: 2% auto;
+        width: 80%;
+        text-align: left;
+      }
+
+      li {
+        list-style-type: none;
+        counter-increment: step-counter;
+        margin: 2% 0;
+      }
+
+      li::before {
+        content: counter(step-counter) ")";
+        margin-right: 10px;
+      }
+
+      input,
+      li > select,
+      button {
+        font-size: 1.5vw;
+      }
+
+      #medicalrecord {
+        width: 10vw;
+        height: auto;
+      }
+
+      #birthweight {
+        width: 10vw;
+        height: auto;
+      }
+
+      #apgar {
+        width: 5vw;
+        height: auto;
+      }
+
+      button {
+        margin: 0 0.5%;
+        padding: 0.5% 2%;
+        border-radius: 5px;
+        border: none;
+        background-color: #ccc;
+        color: black;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #ddd;
+      }
+
+      select {
+        display: inline;
+        width: 20vw;
+        height: 8vw;
+      }
+
+      /* Logo header area */
+      .header {
+        border-bottom: 3px solid red;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/logo.gif" alt="Hospital Logo" />
+    </div>
+
+    <h1>Newborn Registration</h1>
+
+    <form>
+      <ol>
+        <li>Date: <input type="text" placeholder="mm/dd/yy" /></li>
+
+        <li>
+          Infant's first name:
+          <input type="text" placeholder="First" />
+          Last:
+          <input type="text" placeholder="Last" />
+        </li>
+
+        <li>
+          Medical Record #:
+          <input type="text" id="medicalrecord" />
+        </li>
+
+        <li>
+          Date of birth:
+          <input type="text" placeholder="mm/dd/yy" />
+        </li>
+
+        <li>
+          Birth weight:
+          <input type="text" id="birthweight" />
+        </li>
+
+        <li>
+          APGAR score:
+          <input type="text" id="apgar" />
+        </li>
+
+        <li>
+          Mother's first name:
+          <input type="text" placeholder="First" />
+          Last:
+          <input type="text" placeholder="Last" />
+        </li>
+
+        <li>
+          Father's first name:
+          <input type="text" placeholder="First" />
+          Last:
+          <input type="text" placeholder="Last" />
+        </li>
+
+        <li>
+          Physician (check all that apply):
+          <br />
+          <select multiple>
+            <option>Dr. Warren Albert</option>
+            <option>Dr. Maria Alvarez</option>
+            <option>Dr. Karen Brinkman</option>
+            <option>Dr. Michael Kerry</option>
+          </select>
+        </li>
+      </ol>
+
+      <div>
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+      </div>
+    </form>
+  </body>
+</html>

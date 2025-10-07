@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submitted Information</title>
+  </head>
+  <body>
+    <h2>Data Received from Contact Form - NhyNhi</h2>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.write(
+        "<p><strong>Full name:</strong> " + params.get("fullname") + "</p>"
+      );
+      document.write(
+        "<p><strong>Email:</strong> " + params.get("email") + "</p>"
+      );
+      document.write(
+        "<p><strong>Send to:</strong> " + params.get("sendto") + "</p>"
+      );
+      document.write(
+        "<p><strong>Title:</strong> " + params.get("title") + "</p>"
+      );
+      document.write(
+        "<p><strong>Content:</strong> " + params.get("content") + "</p>"
+      );
+    </script>
+  </body>
+</html>

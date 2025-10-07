@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product List - GET Method</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        margin: 50px auto;
+        background-color: white;
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #eee;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 5px;
+        text-align: right;
+      }
+
+      .bottom-row td {
+        border: none;
+      }
+
+      #total {
+        width: 100px;
+        padding: 5px;
+        text-align: right;
+      }
+
+      #sumBtn {
+        background-color: orange;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      #sumBtn:hover {
+        background-color: darkorange;
+      }
+
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List of Products</h2>
+    <form action="result.html" method="get">
+      <table>
+        <tr>
+          <th>Part Number</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Item total</th>
+        </tr>
+        <tr>
+          <td>C112</td>
+          <td>Mouse</td>
+          <td>19.95</td>
+          <td><input type="text" name="qty1" /></td>
+          <td><input type="text" name="item1" /></td>
+        </tr>
+        <tr>
+          <td>B124</td>
+          <td>Keyboard US</td>
+          <td>29.95</td>
+          <td><input type="text" name="qty2" /></td>
+          <td><input type="text" name="item2" /></td>
+        </tr>
+        <tr>
+          <td>U125</td>
+          <td>USB KingMax</td>
+          <td>39.95</td>
+          <td><input type="text" name="qty3" /></td>
+          <td><input type="text" name="item3" /></td>
+        </tr>
+        <tr class="bottom-row">
+          <td colspan="4" style="text-align: right"><b>Total:</b></td>
+          <td>
+            <input type="text" id="total" name="total" />
+            <input type="submit" id="sumBtn" value="Sum" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
