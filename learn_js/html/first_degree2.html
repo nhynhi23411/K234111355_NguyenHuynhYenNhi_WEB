@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>First Degree - Nguyễn Huy Hoàng</title>
+        <script src="../js/main.js"></script>
+    </head>
+    <body>
+        <form name="myform">
+            <fieldset>
+                <legend>First Degree</legend>
+                <table>
+                    <tr>
+                        <td>A Coeff.</td>
+                        <td><input type="text" name="a_coeff" id="a_coeff"/></td>
+                    </tr>
+                    <tr>
+                        <td>B Coeff.</td>
+                        <td><input type="text" name="b_coeff" id="b_coeff"/></td>
+                    </tr>
+                    <tr>
+                        <td>Result 1:</td>
+                        <td><input type="text" name="result1" id="result1" value="my result here"/></td>
+                    </tr>
+                    <tr>
+                        <td>Result 2:</td>
+                        <td id="result2">Your Result here</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="button" onclick="call_first_degree(a_coeff.value,b_coeff.value,result1,result2)">Solution</button>
+                            <button type="reset">Clear</button>
+                            <button type="button">Help</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

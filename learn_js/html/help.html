@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nguyễn Huỳnh Yến Nhi - Resume</title>
+  </head>
+  <body onload="set_default()">
+    <h1 id="my_title">Title Here</h1>
+    <div id="my_content"></div>
+    <script type="text/javascript">
+      function set_default() {
+        // Thay đổi màu nền của h1 thành màu vàng
+        let my_title = document.getElementById("my_title");
+        my_title.style.backgroundColor = "yellow";
+
+        my_title.innerText = "Learn Javascript 1";
+
+        let my_content = document.getElementById("my_content");
+        my_content.innerHTML = '<img src="images/Jackson.gif">';
+      }
+    </script>
+    <footer>
+      <p>&copy; 2025 Bản quyền thuộc về NhyNhi.</p>
+    </footer>
+  </body>
+</html>

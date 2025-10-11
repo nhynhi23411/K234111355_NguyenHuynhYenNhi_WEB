@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tiêu đề trang</title>
+    <script type="text/javascript">
+      function save_infor() {
+        // Lấy giá trị từ các trường nhập liệu
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+
+        // Lấy phần tử có id="result"
+        let result = document.getElementById("result");
+
+        // Cập nhật nội dung HTML của phần tử result
+        // Chú ý: Cần thêm thẻ <p> để xuống dòng
+        result.innerHTML =
+          "<p>Tên: " + name + "</p>" + "<p>Email: " + email + "</p>";
+      }
+    </script>
+  </head>
+  <body>
+    <form name="my_form">
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input type="text" name="name" id="name" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input type="email" name="email" id="email" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button type="button" onclick="save_infor()">Save Infor</button>
+            <button type="reset">Clear</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="result"></div>
+  </body>
+</html>
