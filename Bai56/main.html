@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>String Processing - NhyNhi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function countUpperCase() {
+        var s = document.getElementById("input").value.trim();
+        var numUpper = s.length - s.replace(/[A-Z]/g, "").length;
+        document.getElementById("result").value = numUpper;
+      }
+      function upperCase() {
+        var s = document.getElementById("input").value.trim();
+        var result = s.toUpperCase();
+        document.getElementById("result").value = result;
+      }
+      function lowerCase() {
+        var s = document.getElementById("input").value.trim();
+        var result = s.toLowerCase();
+        document.getElementById("result").value = result;
+      }
+      function countLowerCase() {
+        var s = document.getElementById("input").value.trim();
+        var numLower = s.replace(/[A-Z]/g, "").length;
+        document.getElementById("result").value = numLower;
+      }
+      function printWord() {
+        var s = document.getElementById("input").value.trim();
+        var result = "",
+          i = 0;
+        for (; i < s.length; i++)
+          result = result + s.substring(i, i + 1) + "\n";
+        document.getElementById("result").value = result;
+      }
+      function countWord() {
+        var s = document.getElementById("input").value;
+        var count = s.match(/\S+/g).length;
+        document.getElementById("result").value = count;
+      }
+      function countVowelAndConsonants() {
+        var s = document.getElementById("input").value.trim();
+        s = s.replace(/(.)(?=.*\1)/g, "");
+        var vowels = s.match(/([aeiou])/gi);
+        var consonants = s.match(/[^aeiou]/gi);
+        document.getElementById("result").value =
+          "Vowels:\n" + vowels + "\n" + "Consonants:\n" + consonants;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="https://www.w3schools.com/jsref/jsref_obj_string.asp">
+      <table>
+        <tr>
+          <th colspan="2"><h1>Using String Processing functions</h1></th>
+        </tr>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>
+                <b><label for="input">Input Data:</label></b>
+              </legend>
+              <textarea rows="5" cols="40" id="input"></textarea>
+            </fieldset>
+          </td>
+          <td>
+            <fieldset>
+              <legend>
+                <b><label for="result">Result:</label></b>
+              </legend>
+              <textarea rows="5" cols="40" id="result"></textarea>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="reset">Enter</button></td>
+          <td>
+            <button type="button" onclick="countUpperCase()">
+              Count uppercase
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" onclick="upperCase()">
+              Uppercase display
+            </button>
+          </td>
+          <td>
+            <button type="button" onclick="printWord()">
+              Output one character per line
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" onclick="lowerCase()">
+              Lowercase display
+            </button>
+          </td>
+          <td>
+            <button type="button" onclick="countWord()">Word count</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" onclick="countLowerCase()">
+              Count lowercase
+            </button>
+          </td>
+          <td>
+            <button type="button" onclick="countVowelAndConsonants()">
+              Vowels & consonants
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button
+              type="button"
+              onclick="window.open('https://www.w3schools.com/', '_blank')"
+            >
+              W3C's String Processing Website
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
