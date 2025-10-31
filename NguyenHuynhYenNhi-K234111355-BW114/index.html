@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NguyenHuynhYenNhi-K234111355-BW114</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- External style for demo -->
+    <link rel="stylesheet" href="css/external.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- A: Header + Menu -->
+      <header class="area-a">
+        <div class="brand">
+          <img
+            src="images/lemon_logo.png"
+            alt="Lemon Company Logo"
+            class="brand-logo"
+          />
+        </div>
+
+        <nav class="menu dropdown">
+          <ul class="menu-root">
+            <li>
+              <a href="#" class="menu-link" data-page="about">About me</a>
+            </li>
+
+            <li class="has-sub">
+              <a href="#" class="menu-title">API and External</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" class="menu-link" data-page="weather"
+                    >Weather API</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="menu-link" data-page="rss">RSS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-sub">
+              <a href="#" class="menu-title">Form & Javascript</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" class="menu-link" data-page="products"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="menu-link" data-page="providers"
+                    >Providers</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="menu-link" data-page="login">Login/Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- B: Left sidebar -->
+      <aside class="area-b">
+        <div id="b-dynamic"></div>
+        <div class="sidebar-card">
+          <h4>Quick Access</h4>
+          <div style="display: grid; gap: 6px">
+            <a class="menu-link" data-page="about" href="#">About me</a>
+            <a class="menu-link" data-page="weather" href="#">Weather API</a>
+            <a class="menu-link" data-page="rss" href="#">RSS</a>
+            <a class="menu-link" data-page="products" href="#">Products</a>
+            <a class="menu-link" data-page="providers" href="#">Providers</a>
+            <a class="menu-link" data-page="login" href="#">Login/Logout</a>
+            <a class="menu-link" data-page="lottery" href="#">Lottery</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- C: Main content (dynamic) -->
+      <main id="content-area" class="area-c">
+        <!-- Nội dung sẽ được render bằng JS -->
+      </main>
+
+      <!-- D: Right sidebar -->
+      <aside class="area-d">
+        <div style="margin-top: 12px">
+          <marquee
+            direction="down"
+            scrollamount="3"
+            behavior="scroll"
+            height="80"
+          >
+            I declare that all of these solutions are my own and not copied from
+            anyone in this class
+          </marquee>
+        </div>
+        <div class="sidebar-card" style="text-align: center">
+          <h4 style="color: #d81b60; margin-bottom: 8px">
+            🍋 About Lemon Company
+          </h4>
+          <img
+            src="images/lemon_logo.png"
+            alt="Lemon Company"
+            style="
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              margin-bottom: 10px;
+            "
+          />
+          <p style="font-size: 14px; color: #444; line-height: 1.6">
+            <b>Lemon Company</b> is a creative startup focusing on web
+            development and digital solutions. We believe technology should be
+            simple, elegant, and empowering.
+          </p>
+          <p style="font-style: italic; color: #888; font-size: 13px">
+            “Fresh ideas, bright future.”
+          </p>
+        </div>
+      </aside>
+
+      <!-- E: Footer -->
+      <footer class="area-e">
+        <span id="footer-text">&copy; 2025 Lemon Company</span>
+      </footer>
+    </div>
+
+    <!-- JS liên kết -->
+    <script src="js/router.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/rss.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/providers.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/weather-sidebar.js"></script>
+    <script src="js/lottery.js"></script>
+    <script src="js/lottery-sidebar.js"></script>
+    <script src="js/lottery.js"></script>
+  </body>
+</html>
